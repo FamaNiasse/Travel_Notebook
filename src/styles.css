@@ -5,6 +5,20 @@ body {
     font-family: 'Inter', sans-serif;
     font-family: 'Lora', serif;
     background: var(--color-white);
+    height: 100vh;
+    max-height: 100vh;
+  }
+
+  app-root{
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main{
+    flex: 1;
+    overflow-y: scroll;
   }
 
 .flex-container{
