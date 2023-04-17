@@ -1,0 +1,20 @@
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #EEDFD4;
+    font-family: 'Lora', serif;
+    height: 70px;
+    width: 100vw;
+    text-align: center;
+
+}
+
+.left{
+    width: 70%;
+}
+
+.right{
+    border-left: solid 1px black;
+    padding: 15px;
+}
