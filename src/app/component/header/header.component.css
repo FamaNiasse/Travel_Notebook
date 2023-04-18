@@ -1,6 +1,5 @@
 header{
     display: flex;
-    flex-direction: row;
     align-items: center;
     background: #EEDFD4;
     font-family: 'Lora', serif;
@@ -8,6 +7,10 @@ header{
     width: 100vw;
     text-align: center;
 
+}
+
+p{
+    font-size: 16px;
 }
 
 .left{
@@ -18,3 +21,52 @@ header{
     border-left: solid 1px black;
     padding: 15px;
 }
+
+@media screen and (min-width: 640px) {
+    header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    max-width: 157px;
+    height: 100%;
+
+    }
+
+    p{
+        writing-mode: vertical-lr;
+    }
+
+    .vide{
+        height: 20px ;
+        border-top: 2px solid var(--color-black) ;
+   
+    }
+
+    .left{
+        width: 30%;
+        border-bottom: 2px solid var(--color-black);
+        padding: 40px;
+    }
+    
+    .right{
+        border-top: 2px solid var(--color-black);
+        border-left: none;
+    
+    }
+  
+  }
+
+/* @media (max-width: 1030px) {
+
+    #accueil {
+        flex-direction: column;
+        padding: 20px;
+
+    }
+  
+} */
+
