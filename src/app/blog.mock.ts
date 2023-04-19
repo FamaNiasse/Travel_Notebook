@@ -1,26 +1,6 @@
-// export interface IPicture{
-//     id: number,
-//     picture: string,
 
-// }
 
-// export interface IPositive{
-//     pays: string,
-//     positiveOpinion: string,
-// }
-
-// export interface INegative{
-//     pays: string,
-//     negativeOpinion: string,
-// }
-
-// export interface IConseil{
-//     pays: string,
-//     newAdvise: string,
-
-// }
-
-export interface Iblog{
+export interface INotebook{
     id: number,
     country: string,
     city: string,
@@ -37,7 +17,7 @@ export interface Iblog{
 
 }
 
-export const BLOG: Iblog[] = [
+export const NOTEBOOK: INotebook[] = [
 
 {
     id: 1,
@@ -47,7 +27,7 @@ export const BLOG: Iblog[] = [
     dateBack: new Date(2022, 5, 17),
     firstPicture: 'assets/img/first-pics.png',
     otherPicture: [
-        'assets/img/first-pics.png'
+        'assets/img/other-pics.png'
     ],
     travelContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor massa id sem iaculis, et rutrum ligula ornare. Etiam malesuada diam justo, nec sagittis ligula rhoncus sit amet. Fusce ac viverra nisi. Integer nibh urna, posuere euismod dolor ac. Donec commodo pellentesque sapien eu interdum.Vestibulum neque nulla, mattis eget hendrerit nec, tempus pharetra est.Nulla facilisi.Curabitur elit lorem, rhoncus quis quam et, imperdiet euismod mi.Morbi eget elit ac velit porttitor sodales.Nulla scelerisque risus ex, a faucibus est eleifend sed.Aliquam ac facilisis lorem, ut ornare velit.dignissim metus.Aliquam dignissim lorem id nisi aliquet, a sodales ipsum dignissim.',
     positive: [
