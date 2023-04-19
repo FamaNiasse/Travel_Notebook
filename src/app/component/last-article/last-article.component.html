@@ -1,1 +1,13 @@
-<p>last-article works!</p>
+<section class="first-pics">
+
+    <div class="imageCountry"> <img src="{{ notebook.firstPicture }}" alt="Image de {{ notebook.country }}" />
+        <div class="container">
+            <h2> {{ notebook.country }}-{{ notebook.city }}
+            </h2>
+            <div class="date">
+                <p></p>{{notebook.dateGo | date:'dd/MM/yyyy'}} {{notebook.dateBack | date:'dd/MM/yyyy'}}
+
+            </div>
+        </div>
+    </div>
+</section>

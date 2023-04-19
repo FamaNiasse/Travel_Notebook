@@ -2,6 +2,7 @@ header{
     font-family: 'Inter', sans-serif;
     display: flex;
     align-items: center;
+    justify-content: center;
     background: #EEDFD4;
     font-family: 'Lora', serif;
     height: 70px;
@@ -12,6 +13,10 @@ header{
 
 p{
     font-size: 16px;
+}
+
+.left{
+    min-width: 75%;
 }
 
 
@@ -35,7 +40,7 @@ p{
 
     }
 
-    .titre{
+    .left{
         font-size: 30px;
         border-left: 1px solid var(--color-black);
         padding: 50px;
