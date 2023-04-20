@@ -11,6 +11,7 @@ import { LastArticleComponent } from './component/last-article/last-article.comp
 import { OtherArticleComponent } from './component/other-article/other-article.component';
 import { ButtonBackComponent } from './component/button-back/button-back.component';
 import { TravelComponent } from './component/travel/travel.component';
+import { AdviceComponent } from './component/advice/advice.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TravelComponent } from './component/travel/travel.component';
     LastArticleComponent,
     OtherArticleComponent,
     ButtonBackComponent,
-    TravelComponent
+    TravelComponent,
+    AdviceComponent
   ],
   imports: [
     BrowserModule,

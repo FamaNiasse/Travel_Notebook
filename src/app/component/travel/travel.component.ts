@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { NOTEBOOK } from 'src/app/blog.mock';
 
 @Component({
   selector: 'app-travel',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./travel.component.css']
 })
 export class TravelComponent {
+
+@Input() title!: string;
+@Input() text!: string;
 
 }
