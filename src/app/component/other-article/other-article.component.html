@@ -1,6 +1,8 @@
 <section class="other-travel">
 
     <h1>Autres voyages</h1>
+
+    <a routerLink="/article"> 
     <ul>
         <li class="otherCountryPics" *ngFor="let travel of otherTravel">
             <img src="{{travel.firstPicture}}" alt="Image de {{ travel.country }}">
@@ -21,6 +23,6 @@
         </li>
 
     </ul>
-
+</a>
 
 </section>

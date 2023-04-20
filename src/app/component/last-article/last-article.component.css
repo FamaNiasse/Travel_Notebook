@@ -44,9 +44,6 @@ p{
 
         }
 
-        main{
-            width: min(200px, 100%);
-        }
         
         .container{
         display: flex;
