@@ -1,0 +1,78 @@
+.otherCountryPics{
+height: 283px;
+width: 350px;
+margin: 0 auto;
+}
+
+h1{
+    font-size: clamp(30px,4vw,60px);
+
+}
+
+
+ul li{
+    margin-bottom: 70px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    background: var(--color-orange);
+    width: 350px;
+    height: 70px;
+    color: var(--color-white);
+}
+
+h2{
+    font-size: clamp(20px,3vw,24px);
+}
+
+p{
+    font-size: clamp(12px,3vw,16px);
+}
+
+.date{
+    border-left: solid 2px white;
+    padding: 10px;
+    width: 30%;
+}
+
+
+
+@media screen and (min-width: 640px) {
+
+.container{
+    background: var(--color-orange);
+    height: 118px;
+    width: 500px;
+    color: var(--color-white);
+}
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    gap:15px;
+}
+
+
+
+ .otherCountryPics {
+    width:500px;
+    height: 406px;
+
+}
+
+
+/*
+
+.date{
+    border-left: solid 2px white;
+    padding: 40px;
+    width: 30%;
+}
+
+h2{
+    padding: 40px;
+} */
+
+}
