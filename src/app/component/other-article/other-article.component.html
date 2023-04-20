@@ -1,0 +1,26 @@
+<section class="other-travel">
+
+    <h1>Autres voyages</h1>
+    <ul>
+        <li class="otherCountryPics" *ngFor="let travel of otherTravel">
+            <img src="{{travel.firstPicture}}" alt="Image de {{ travel.country }}">
+
+            <div class="container">
+
+                <h2>{{travel.country}} 
+                    {{travel.city}}</h2>
+
+                <div class="date">
+
+                    <p>{{travel.dateGo | date:'dd.MM.yyyy'}} {{travel.dateBack | date:'dd.MM.yyyy'}}</p>
+
+                </div>
+
+            </div>
+
+        </li>
+
+    </ul>
+
+
+</section>
