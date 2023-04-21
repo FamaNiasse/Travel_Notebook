@@ -1,7 +1,8 @@
 .travel{
-width: 349px;
-height: 530px;
-background: var(--color-orange);
+width: 95%;
+height: 100%;
 margin: 0 auto;
+padding: 10px;
+background: var(--color-orange);
 color: var(--color-white);
 }

@@ -1,0 +1,11 @@
+h3 {
+    list-style: circle;
+
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { NOTEBOOK } from 'src/app/blog.mock';
 
 @Component({
   selector: 'app-advice',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./advice.component.css']
 })
 export class AdviceComponent {
+  @Input() positive!: string[];
+  @Input() negative!: string[];
+  @Input() advises!: string[];
+  @Input() title!: string;
 
 }
