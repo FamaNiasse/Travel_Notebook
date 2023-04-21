@@ -7,6 +7,7 @@ import { INotebook, NOTEBOOK } from 'src/app/blog.mock';
   templateUrl: './article.component.html',
   styleUrls: ['./article.component.css']
 })
+
 export class ArticleComponent {
 
 countryTravel!: INotebook;
@@ -21,13 +22,10 @@ getCountryById(){
 
   const travelId: number = Number(this.route.snapshot.paramMap.get('id'));
   const country = NOTEBOOK.find(country => country.id === travelId);
-
   if (country) {
     this.countryTravel = country;
 
-    console.log('country',country);
 }else
-
   console.log('Not Found');
 }
 

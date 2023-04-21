@@ -1,7 +1,17 @@
-<app-button-back></app-button-back>
+<section>
 
-<app-last-article></app-last-article>
+<h2> {{countryTravel.country}} {{countryTravel.city}} </h2>
 
-<app-travel [title]="'Le voyage'"></app-travel>
+<img src="{{countryTravel.firstPicture}}" alt="Image de {{countryTravel.country }}" />
 
-<app-advice></app-advice>
+
+<app-travel [title]="'Le voyage'" [text]="countryTravel.travelContent" ></app-travel>
+
+<app-advice [title]="'Notre avis'" [positive]="countryTravel.positive" [negative]="countryTravel.negative" [advises]="countryTravel.advises"></app-advice>
+
+<app-travel [title]="'Le résumé'" [text]="countryTravel.resumeContent" ></app-travel>
+
+<app-button-back class="back"></app-button-back>
+
+</section>
+

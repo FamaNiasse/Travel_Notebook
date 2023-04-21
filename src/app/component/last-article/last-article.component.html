@@ -1,18 +1,18 @@
 <section class="first-pics">
 
-    <a routerLink="/article/{{notebook.id}}">  
-    <div class="imageCountry"> 
-          
-        <img src="{{ notebook.firstPicture }}" alt="Image de {{ notebook.country }}" />
-        <div class="container">
-            <h2> {{ notebook.country }}-{{ notebook.city }}
-            </h2>
+    <a routerLink="/article/{{notebook.id}}">
+
+        <div class="imageCountry">
+            <img src="{{ notebook.firstPicture }}" alt="Image de {{ notebook.country }}" />
+
             <div class="date">
-                <p>{{notebook.dateGo | date:'dd.MM.yyyy'}} <span>.</span> {{notebook.dateBack | date:'dd.MM.yyyy'}}</p>
+                <h2> {{ notebook.country }}-{{ notebook.city }}
+                </h2>
+                <p>{{notebook.dateGo | date:'dd.MM.yyyy'}} <span>.</span> {{notebook.dateBack | date:'dd.MM.yyyy'}}
+                </p>
 
             </div>
         </div>
-    </div>
 
-</a>
+    </a>
 </section>

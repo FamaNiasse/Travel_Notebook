@@ -11,6 +11,4 @@ export class LastArticleComponent {
   notebook: INotebook = NOTEBOOK [0];
 
 
-  
-
 }

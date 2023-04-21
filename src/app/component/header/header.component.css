@@ -6,13 +6,13 @@ header{
     background: #EEDFD4;
     font-family: 'Lora', serif;
     height: 70px;
-    width: 100vw;
+    min-width: 390px;
 
 }
 
 
 p{
-    font-size: 16px;
+    font-size: clamp(16px,3vw,30px);
 }
 
 .left{
@@ -22,29 +22,29 @@ p{
 
 .right{
     border-left: solid 1px black;
-    padding: 15px;
+    padding: 11px;
 }
 
 
 @media screen and (min-width: 640px) {
+
     header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 157px;
+    position: absolute;
+    min-width: 157px;
+    min-height: 2366px;
+    left: -6px;
 
     }
 
-    .left{
+    /* .left{
         font-size: 30px;
         border-left: 1px solid var(--color-black);
         padding: 50px;
-    }
+    } */
 
     p{
         transform: rotate(-90deg);
@@ -59,14 +59,4 @@ p{
     }
   
   }
-
-/* @media (max-width: 1030px) {
-
-    #accueil {
-        flex-direction: column;
-        padding: 20px;
-
-    }
-  
-} */
 
